@@ -11,15 +11,35 @@ import UIKit
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        super.viewDidLoad()
+        updateViewFromController()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    private lazy var game = DiceGame(numOfDices: 2)
+    
+    @IBOutlet weak var gameView: UIView!
+    
+//    @IBAction func touchDice(_ sender: UITapGestureRecognizer) {
+//        if sender.state == .ended {
+//            let location = sender.location(in: gameView)
+//            if let tappedView = gameView.hitTest(location, with: nil) {
+//                if let diceIndex = gameView.subviews.index(of: tappedView) {
+//                    print(diceIndex)
+//                }
+//            }
+//        }
+//    }
+    
+//    func addSubview() {
+//        
+//    }
+    
+    func updateViewFromController() {
+        let diceView = DiceView()
+        gameView.addSubview(diceView)
+        print(game.arrayOfDice)
     }
-
 
 }
 

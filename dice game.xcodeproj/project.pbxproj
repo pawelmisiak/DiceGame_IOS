@@ -12,6 +12,11 @@
 		4F4D8A8F2198ED420015E174 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F4D8A8D2198ED420015E174 /* Main.storyboard */; };
 		4F4D8A912198ED440015E174 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F4D8A902198ED440015E174 /* Assets.xcassets */; };
 		4F4D8A942198ED440015E174 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F4D8A922198ED440015E174 /* LaunchScreen.storyboard */; };
+		4F4D8A9D2198ED950015E174 /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4D8A9C2198ED950015E174 /* Dice.swift */; };
+		4F4D8A9F2198EDAD0015E174 /* DiceGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4D8A9E2198EDAD0015E174 /* DiceGame.swift */; };
+		4F4D8AA12198EE300015E174 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4D8AA02198EE300015E174 /* Grid.swift */; };
+		4F4D8AA32198EE4F0015E174 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4D8AA22198EE4F0015E174 /* GameView.swift */; };
+		4F4D8AA52198EE8D0015E174 /* DiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4D8AA42198EE8D0015E174 /* DiceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		4F4D8A902198ED440015E174 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F4D8A932198ED440015E174 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F4D8A952198ED440015E174 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F4D8A9C2198ED950015E174 /* Dice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
+		4F4D8A9E2198EDAD0015E174 /* DiceGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceGame.swift; sourceTree = "<group>"; };
+		4F4D8AA02198EE300015E174 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		4F4D8AA22198EE4F0015E174 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		4F4D8AA42198EE8D0015E174 /* DiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,27 @@
 		4F4D8A882198ED420015E174 /* dice game */ = {
 			isa = PBXGroup;
 			children = (
-				4F4D8A892198ED420015E174 /* AppDelegate.swift */,
+				4F4D8A9C2198ED950015E174 /* Dice.swift */,
+				4F4D8A9E2198EDAD0015E174 /* DiceGame.swift */,
+				4F4D8AA22198EE4F0015E174 /* GameView.swift */,
+				4F4D8AA42198EE8D0015E174 /* DiceView.swift */,
 				4F4D8A8B2198ED420015E174 /* ViewController.swift */,
+				4F4D8AA02198EE300015E174 /* Grid.swift */,
 				4F4D8A8D2198ED420015E174 /* Main.storyboard */,
-				4F4D8A902198ED440015E174 /* Assets.xcassets */,
-				4F4D8A922198ED440015E174 /* LaunchScreen.storyboard */,
 				4F4D8A952198ED440015E174 /* Info.plist */,
+				4F4D8A902198ED440015E174 /* Assets.xcassets */,
+				4F4D8A9B2198ED670015E174 /* supporting files */,
 			);
 			path = "dice game";
+			sourceTree = "<group>";
+		};
+		4F4D8A9B2198ED670015E174 /* supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				4F4D8A892198ED420015E174 /* AppDelegate.swift */,
+				4F4D8A922198ED440015E174 /* LaunchScreen.storyboard */,
+			);
+			path = "supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F4D8A9F2198EDAD0015E174 /* DiceGame.swift in Sources */,
 				4F4D8A8C2198ED420015E174 /* ViewController.swift in Sources */,
+				4F4D8AA52198EE8D0015E174 /* DiceView.swift in Sources */,
+				4F4D8A9D2198ED950015E174 /* Dice.swift in Sources */,
+				4F4D8AA12198EE300015E174 /* Grid.swift in Sources */,
+				4F4D8AA32198EE4F0015E174 /* GameView.swift in Sources */,
 				4F4D8A8A2198ED420015E174 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
